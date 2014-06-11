@@ -1,5 +1,7 @@
 # Laravel YAML Translations
-Snazzy intro and badges coming soon...
+Snazzy intro coming soon...
+
+[![Build Status](https://travis-ci.org/akuzemchak/laravel-yaml-translations.svg?branch=master)](https://travis-ci.org/akuzemchak/laravel-yaml-translations)
 
 ## Requirements
 
