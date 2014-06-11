@@ -28,14 +28,14 @@ class YamlFileLoaderTest extends \PHPUnit_Framework_TestCase
 
     public function testItLoadsYamlLanguageFiles()
     {
-        $result = ['what' => 'Hello', 'who' => 'World'];
+        $result = array('what' => 'Hello', 'who' => 'World');
 
         $this->assertEquals($result, $this->loader->load('en', 'hello'));
     }
 
     public function testItLoadsNamespacedYamlLanguageFiles()
     {
-        $result = ['what' => 'Howdy', 'who' => 'Y\'all'];
+        $result = array('what' => 'Howdy', 'who' => 'Y\'all');
         $this->loader->addNamespace('texan', __DIR__ . '/fixtures/namespaced/texan');
 
         $this->assertEquals($result, $this->loader->load('en', 'hello', 'texan'));
@@ -43,7 +43,7 @@ class YamlFileLoaderTest extends \PHPUnit_Framework_TestCase
 
     public function testItFallsBackToPhpLanguageFiles()
     {
-        $result = ['what' => 'Goodbye', 'who' => 'World'];
+        $result = array('what' => 'Goodbye', 'who' => 'World');
 
         $this->assertEquals($result, $this->loader->load('en', 'goodbye'));
     }
