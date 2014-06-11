@@ -1,5 +1,6 @@
 # Laravel YAML Translations
-Snazzy intro coming soon...
+
+Translating your application sucks. Translating it by throwing a ton of key/value pairs into plain ol' PHP arrays sucks even worse. This package makes it suck a *little* bit less by allowing you to use [YAML](http://www.yaml.org/) to format your [Laravel](http://laravel.com/) language files.
 
 [![Build Status](https://travis-ci.org/akuzemchak/laravel-yaml-translations.svg?branch=master)](https://travis-ci.org/akuzemchak/laravel-yaml-translations)
 
@@ -10,7 +11,7 @@ Snazzy intro coming soon...
 
 ## Installation
 
-First, add the package to your `composer.json` dependencies:
+First, add the package to your `composer.json` dependencies and run `composer update`:
 
 ```
 {
@@ -35,7 +36,7 @@ email_label: Your Email Address
 password_label: Choose a Password
 ```
 
-**Also worth noting:** If a language file with a `.yml` extension is not found, the loader will fall back to using the PHP language file if one exists. This means you don't have to convert the stock language files, like `validation.php`!
+**Also worth noting:** If a language file with a `.yml` extension is not found, the loader will fall back to using the PHP language file if one exists. This means you don't have to convert the stock language files, like `validation.php` or `reminders.php`!
 
 ## Support
 
